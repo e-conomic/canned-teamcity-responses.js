@@ -1,0 +1,11 @@
+{
+  "name": "canned-teamcity-responses.js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jon Lauridsen",
+  "dependencies": {
+    "lodash": "^4.4.0",
+    "mocked-data": "gaggle/mocked-data",
+    "moment": "^2.11.2"
+  }
+}
