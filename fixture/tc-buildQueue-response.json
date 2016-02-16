@@ -1,0 +1,47 @@
+{
+  "id": 1237471,
+  "buildTypeId": "ProcessPlayground_GithubTriggeredTest",
+  "state": "queued",
+  "branchName": "41/head",
+  "href": "/httpAuth/app/rest/buildQueue/id:1237471",
+  "webUrl": "https://teamcity.e-conomic.net:8443/viewQueued.html?itemId=1237471",
+  "buildType": {
+    "id": "ProcessPlayground_GithubTriggeredTest",
+    "name": "Github Triggered Test",
+    "description": "Just a test to verify Github can trigger builds",
+    "projectName": "Process Playground",
+    "projectId": "ProcessPlayground",
+    "href": "/httpAuth/app/rest/buildTypes/id:ProcessPlayground_GithubTriggeredTest",
+    "webUrl": "https://teamcity.e-conomic.net:8443/viewType.html?buildTypeId=ProcessPlayground_GithubTriggeredTest"
+  },
+  "startEstimate": "20151006T123335+0200",
+  "queuedDate": "20151006T123233+0200",
+  "triggered": {
+    "type": "user",
+    "date": "20151006T123233+0200",
+    "user": {
+      "username": "githubplayground",
+      "name": "GitHub (playground)",
+      "id": 134,
+      "href": "/httpAuth/app/rest/users/id:134"
+    }
+  },
+  "changes": {
+    "href": "/httpAuth/app/rest/changes?locator=build:(id:1237471)"
+  },
+  "revisions": {
+    "count": 0
+  },
+  "compatibleAgents": {
+    "href": "/httpAuth/app/rest/buildQueue/id:1237471/compatibleAgents"
+  },
+  "properties": {
+    "count": 1,
+    "property": [
+      {
+        "name": "github.context",
+        "value": "Test"
+      }
+    ]
+  }
+}

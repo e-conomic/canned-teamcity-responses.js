@@ -1,0 +1,164 @@
+{
+  "paused": false,
+  "id": "ProcessPlayground_GithubTriggeredTest",
+  "name": "Github Triggered Test",
+  "description": "Just a test to verify Github can trigger builds",
+  "projectName": "Process Playground",
+  "projectId": "ProcessPlayground",
+  "href": "/httpAuth/app/rest/buildTypes/id:ProcessPlayground_GithubTriggeredTest",
+  "webUrl": "https://teamcity.e-conomic.net:8443/viewType.html?buildTypeId=ProcessPlayground_GithubTriggeredTest",
+  "project": {
+    "id": "ProcessPlayground",
+    "name": "Process Playground",
+    "parentProjectId": "_Root",
+    "description": "TC Projects to test workflows from the process playground repo",
+    "href": "/httpAuth/app/rest/projects/id:ProcessPlayground",
+    "webUrl": "https://teamcity.e-conomic.net:8443/project.html?projectId=ProcessPlayground"
+  },
+  "vcs-root-entries": {
+    "count": 1,
+    "vcs-root-entry": [
+      {
+        "id": "ProcessPlayground_ProcessPlaygroundHead",
+        "vcs-root": {
+          "id": "ProcessPlayground_ProcessPlaygroundHead",
+          "name": "process-playground HEAD",
+          "href": "/httpAuth/app/rest/vcs-roots/id:ProcessPlayground_ProcessPlaygroundHead"
+        },
+        "checkout-rules": ""
+      }
+    ]
+  },
+  "settings": {
+    "count": 16,
+    "property": [
+      {
+        "name": "allowExternalStatus",
+        "value": "false"
+      },
+      {
+        "name": "artifactRules",
+        "value": ""
+      },
+      {
+        "name": "buildNumberCounter",
+        "value": "32"
+      },
+      {
+        "name": "buildNumberPattern",
+        "value": "%build.counter%"
+      },
+      {
+        "name": "checkoutDirectory"
+      },
+      {
+        "name": "checkoutMode",
+        "value": "ON_SERVER"
+      },
+      {
+        "name": "cleanBuild",
+        "value": "false"
+      },
+      {
+        "name": "enableHangingBuildsDetection",
+        "value": "true"
+      },
+      {
+        "name": "executionTimeoutMin",
+        "value": "0"
+      },
+      {
+        "name": "maximumNumberOfBuilds",
+        "value": "0"
+      },
+      {
+        "name": "shouldFailBuildIfTestsFailed",
+        "value": "true"
+      },
+      {
+        "name": "shouldFailBuildOnAnyErrorMessage",
+        "value": "false"
+      },
+      {
+        "name": "shouldFailBuildOnBadExitCode",
+        "value": "true"
+      },
+      {
+        "name": "shouldFailBuildOnOOMEOrCrash",
+        "value": "true"
+      },
+      {
+        "name": "showDependenciesChanges",
+        "value": "false"
+      },
+      {
+        "name": "vcsLabelingBranchFilter",
+        "value": "+:<default>"
+      }
+    ]
+  },
+  "parameters": {
+    "count": 1,
+    "href": "/app/rest/buildTypes/id:ProcessPlayground_GithubTriggeredTest/parameters",
+    "property": [
+      {
+        "name": "github.context",
+        "value": "Test",
+        "own": true
+      }
+    ]
+  },
+  "steps": {
+    "count": 1,
+    "step": [
+      {
+        "id": "RUNNER_579",
+        "name": "",
+        "type": "jetbrains_powershell",
+        "properties": {
+          "count": 5,
+          "property": [
+            {
+              "name": "jetbrains_powershell_bitness",
+              "value": "x86"
+            },
+            {
+              "name": "jetbrains_powershell_execution",
+              "value": "PS1"
+            },
+            {
+              "name": "jetbrains_powershell_script_code",
+              "value": "Start-Sleep -s %timeout%\nls"
+            },
+            {
+              "name": "jetbrains_powershell_script_mode",
+              "value": "CODE"
+            },
+            {
+              "name": "teamcity.step.mode",
+              "value": "default"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "features": {
+    "count": 0
+  },
+  "triggers": {
+    "count": 0
+  },
+  "snapshot-dependencies": {
+    "count": 0
+  },
+  "artifact-dependencies": {
+    "count": 0
+  },
+  "agent-requirements": {
+    "count": 0
+  },
+  "builds": {
+    "href": "/httpAuth/app/rest/buildTypes/id:ProcessPlayground_GithubTriggeredTest/builds/"
+  }
+}
